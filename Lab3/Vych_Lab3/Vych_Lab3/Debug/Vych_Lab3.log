@@ -1,0 +1,4 @@
+﻿  Vych_Lab3.cpp
+C:\Users\bokov\source\repos\C++\Vych_Lab3\Vych_Lab3\Forsythe.h(31,1): warning C4005: EPSILON: изменение макроопределения
+C:\Users\bokov\source\repos\C++\Vych_Lab3\Vych_Lab3\cmath.h(112,1): message : см. предыдущее определение "EPSILON"
+  Vych_Lab3.vcxproj -> C:\Users\bokov\source\repos\C++\Vych_Lab3\Debug\Vych_Lab3.exe
