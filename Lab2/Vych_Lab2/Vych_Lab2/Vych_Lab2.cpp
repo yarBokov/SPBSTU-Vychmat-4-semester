@@ -20,6 +20,21 @@ void PrintMatrixes(int n, double* a1, double* a2)
   }
 }
 
+long double SigmaFunc(int n, double* d, double* d1)
+{
+  long double si = 0.0;
+  long double sig = 0.0;
+  for (int i = 0; i < n; i++)
+  {
+    si += d[i] * d[i];
+    auto div = d[i] - d1[i];
+    sig += div * div;
+  }
+  sig = sqrt(sig);
+  si = sqrt(si);
+  return sig / si;
+}
+
 void Work(int n)
 {
   cout << "N= " << n << "\n";
@@ -87,6 +102,8 @@ void Work(int n)
   Decomp(n, C1, &cond2, pivot2);
   Solve(n, C1, d1, pivot2);
   cout << "cond: " << cond2 << "\n\n";
+  auto result = SigmaFunc(n, d, d1);
+  cout << "SIGMA= " << result << "\n____________________________________________________________________________________\n";
   delete[] pivot1;
   delete[] pivot2;
   delete[] C;
