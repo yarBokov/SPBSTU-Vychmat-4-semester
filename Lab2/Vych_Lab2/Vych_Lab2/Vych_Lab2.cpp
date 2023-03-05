@@ -73,7 +73,7 @@ void Work(int n)
     d1[i] = 0;
     for (int j = 0; j < n; j++)
     {
-      d1[i] += CT[i * n + j] * d[i];
+      d1[i] += CT[i * n + j] * d[j];
     }
   }
   PrintMatrixes(n, C, d);
