@@ -23,7 +23,7 @@ def check(x1, x2, p1, p4, p2, p3, p5):
 def solve_system(p2, p3, p5):
     res = {'x1': [], 'x2': [], 'p1': [], 'p4': []}
     not_turn_dots = {'x1': [], 'x2': [], 'p1': [], 'p4': []}
-    for x1 in frange(0.1, 1.5, 0.02):
+    for x1 in frange(0.1, 1.5, 0.01):
         # Get coefficients of 3rd equation
         a = 1 - (1 + x1 ** p3) * p3 * (x1 ** p3) * (1 - p5) / \
             (((1 + x1 ** p3) ** 2) * (p5 + x1 ** p3))
